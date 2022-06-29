@@ -26,13 +26,13 @@ os.makedirs(build_dir)
 
 # copy in the data from input folder
 try:
-    os.system('cp -r ' + training_dir + '/trained.fbz ' + build_dir)
+    os.system('cp -r ' + training_dir + '/*' + build_dir)
 except:
     print('ERROR: Failed to find .fbz model artifact. Ensure the project was trained with an Akida learning block')
-    os.system('cp -r ' + input_dir + '/trained.savemodel.zip ' + build_dir)
-    shutil.unpack_archive(os.path.join(build_dir, 'trained.savedmodel.zip'), build_dir, 'zip')
-    os.system('rm ' + 'build_dir/*.zip')
-    os.system('ls -l ' + build_dir)
+    os.system('rm -r ' + build_dir + '/*.py')
+    os.system('rm -r ' + build_dir + '/*.sh')
+    os.system('rm -r ' + build_dir + '/*.json')
+    os.system('rm -r ' + build_dir + '/*.tflite')
 
 print('Copying files to build directory OK')
 print('')

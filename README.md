@@ -10,7 +10,7 @@ This repostitory offers an early look at our partnership work with Brainchip - w
 
 1. Chooose your favorite Edge Impulse image classification project. If you don't already have one, learn how to build your first ML model with Edge Impulse [here](https://docs.edgeimpulse.com/docs/tutorials/image-classification)
 
-2. Add the two custom blocks present in this repository to your account. To do this just install the [Edge Impulse CLI] (https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation) and run the following commands in each subdirectory
+2. Add the two custom blocks present in this repository to your account. To do this just install the [Edge Impulse CLI](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation) and run the following commands in each subdirectory
 
 ```
 edge-impulse-blocks init

@@ -26,7 +26,7 @@ os.makedirs(build_dir)
 
 # copy in the data from input folder
 try:
-    os.system('cp -r ' + training_dir + '/*' + build_dir)
+    os.system('cp -r ' + training_dir + '/* ' + build_dir)
 except:
     print('ERROR: Failed to find .fbz model artifact. Ensure the project was trained with an Akida learning block')
     os.system('rm -r ' + build_dir + '/*.py')
